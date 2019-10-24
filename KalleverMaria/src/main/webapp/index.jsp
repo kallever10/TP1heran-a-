@@ -15,7 +15,7 @@
  <style type="text/css" >
    input, textarea, select {
       display: block;
-      margin-bottom: 10px: 
+      margin-bottom: 10px; 
    }
    /*div.sexo {
     display: inline;
@@ -30,7 +30,7 @@
   <h1> Formulário HTML js</h1> 
   <h2> Preencha o formulário abaixo</h2><br />
 
-<form oninput="x.value=parseInt(a.value)" action="Script_do_Formulario.php" method="post">
+<form oninput="x.value=parseInt(a.value)" action="PQP" method="post">
 
 <!-- DADOS PESSOAIS-->
 <fieldset>
@@ -38,7 +38,7 @@
   <div>
     <input type="hidden" name="oculto" value="emJs">
     <label for="nome">Nome: </label>
-    <input type="text" name="nome" placeholder="Fulano..." alt="Digite o seu nome">
+    <input type="text" name="nome" placeholder="Fulano..." title="Digite o seu nome">
     <label for="sobrenome">Sobrenome: </label>
     <input type="text" name="sobrenome">
   </div>
@@ -91,7 +91,7 @@
 
     <label for="interesse" >Interesse: (com multipla escolha</label>
     <select name="interesse" multiple size="5"> 
-        <option value="js" selected="js">JavaScript</option> 
+        <option value="js" selected>JavaScript</option> 
         <option value="c">C</option> 
         <option value="pytho">Python</option> 
         <option value="java">Java</option> 
