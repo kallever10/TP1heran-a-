@@ -6,7 +6,7 @@
     </servlet>
     <servlet>
         <servlet-name>PQP</servlet-name>
-        <servlet-class>br.iff.edu.kallevermaria.PQP</servlet-class>
+        <servlet-class>br.iff.edu.kallevermaria.servlets.PQP</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Meu1Servlt</servlet-name>

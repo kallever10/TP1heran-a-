@@ -35,6 +35,7 @@
 <!-- DADOS PESSOAIS-->
 <fieldset>
  <legend>Dados Pessoais</legend>
+ <%@include file="WEB-INF/jspf/menu.jspf" %>
   <div>
     <input type="hidden" name="oculto" value="emJs">
     <label for="nome">Nome: </label>
