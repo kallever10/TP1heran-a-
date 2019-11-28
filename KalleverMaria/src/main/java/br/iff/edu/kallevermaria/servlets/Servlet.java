@@ -38,8 +38,11 @@ public class Servlet extends HttpServlet {
         String sobrenome = request.getParameter("sobrenome") ;
         System.out.println("NomeCompleto: "+nome+" "+sobrenome+"");
         String senha = request.getParameter("senha") ;
+         int senhaConvertido = Integer.parseInt(senha);
         String NomeCompleto=("NomeCompleto: "+nome+" "+sobrenome+"");
-       
+         String cpf = request.getParameter("cpf") ;
+         int cpfConvertido = Integer.parseInt(cpf);
+        
          Usuario user= new Usuario();
          user.setNome(NomeCompleto);
          user.setSenha(senha);

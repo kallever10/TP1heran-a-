@@ -102,18 +102,6 @@
         <option value="go">Go</option> 
         </select>
     </div--%>
-  </fieldset>
- <%--  <fieldset>
-    <legend>Dados de documentos</legend>
-    <div>
-    <label for="rg">RG: </label>
-    <input type="text" name="rg" size="13" maxlength="13"> 
-   </div>
-   <div>
-    <label>CPF:</label>
-    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
-   </div>
-</fieldset>
 
 <br />
 <!-- ENDEREÇO -->
