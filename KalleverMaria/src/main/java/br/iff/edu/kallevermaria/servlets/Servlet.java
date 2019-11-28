@@ -38,14 +38,29 @@ public class Servlet extends HttpServlet {
         String sobrenome = request.getParameter("sobrenome") ;
         System.out.println("NomeCompleto: "+nome+" "+sobrenome+"");
         String senha = request.getParameter("senha") ;
-         int senhaConvertido = Integer.parseInt(senha);
+        String municipio = request.getParameter("municipio") ;
+        String cep = request.getParameter("cep") ;
+          int cepComvertido = Integer.parseInt(cep);
         String NomeCompleto=("NomeCompleto: "+nome+" "+sobrenome+"");
          String cpf = request.getParameter("cpf") ;
-         int cpfConvertido = Integer.parseInt(cpf);
+         System.out.println("senhaConvertido");
+         System.out.println("municipio");
+          System.out.println("cepComvertido");
+         
         
          Usuario user= new Usuario();
          user.setNome(NomeCompleto);
          user.setSenha(senha);
+         user.setEndCep(cep);
+         user.setEndMunicipio(municipio);
+         user.setDocCpf(cpf);
+
+         
+         
+         
+         
+         
+         
          
          Double aleatorio = Math.random();
          BigDecimal id = new BigDecimal(aleatorio);

@@ -32,6 +32,12 @@ import javax.xml.bind.annotation.XmlRootElement;
     , @NamedQuery(name = "Usuario.findBySenha", query = "SELECT u FROM Usuario u WHERE u.senha = :senha")})
 public class Usuario implements Serializable {
 
+    @Size(max = 50)
+    @Column(name = "end_municipio")
+    private String endMunicipio;
+    @Column(name = "end_cep")
+    private Integer endCep;
+
     @Size(max = 20)
     @Column(name = "doc_rg")
     private String docRg;
@@ -123,5 +129,31 @@ public class Usuario implements Serializable {
     public void setDocCpf(Long docCpf) {
         this.docCpf = docCpf;
     }
+
+    public String getEndMunicipio() {
+        return endMunicipio;
+    }
+
+    public void setEndMunicipio(String endMunicipio) {
+        this.endMunicipio = endMunicipio;
+    }
+
+    public Integer getEndCep() {
+        return endCep;
+    }
+
+    public void setEndCep(Integer endCep) {
+        this.endCep = endCep;
+    }
+
+    public void setEndCep(String cep) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setDocCpf(String cpf) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
     
 }
